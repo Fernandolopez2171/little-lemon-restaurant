@@ -81,6 +81,23 @@ const Footer = () => {
                   Menu
                 </a>
               </li>
+              <li className="mb-2">
+                <a
+                  href="#testimonials"
+                  className="text-light text-decoration-none hover-link small d-inline-block"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector('#testimonials');
+                    if (element) {
+                      const headerHeight = 80;
+                      const elementPosition = element.offsetTop - headerHeight;
+                      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  Testimonials
+                </a>
+              </li>
             </ul>
           </div>
 
