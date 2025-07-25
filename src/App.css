@@ -1,0 +1,36 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 200px);
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 1rem;
+  }
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

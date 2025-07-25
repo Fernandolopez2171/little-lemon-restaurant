@@ -1,0 +1,36 @@
+
+.logo {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #495e57;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover span,
+.nav-link:hover svg {
+  color: white;
+}
+
+
+.nav-mobile-item:hover {
+  background-color: #495e57;
+  color: white;
+}
+
+.nav-mobile-item:hover span,
+.nav-mobile-item:hover svg {
+  color: white;
+}

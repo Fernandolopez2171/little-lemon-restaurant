@@ -1,0 +1,35 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card .text-center div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card img,
+  .card .text-center div {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:hover img,
+  .card .text-center div:hover {
+    transform: none;
+  }
+}

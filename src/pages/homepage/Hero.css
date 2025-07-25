@@ -1,0 +1,42 @@
+.hero-section-modern {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image-card {
+  border-radius: 2rem !important;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-card:hover {
+  transform: scale(1.02);
+}
+
+.hero-image-modern {
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.floating-badge {
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-badge > div {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero-image-modern {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image-modern {
+    height: 250px;
+  }
+}

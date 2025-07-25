@@ -1,0 +1,91 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Enhanced lemon gradient -->
+    <radialGradient id="lemonGradient" cx="0.35" cy="0.25">
+      <stop offset="0%" stop-color="#FFFF66"/>
+      <stop offset="40%" stop-color="#F4CE14"/>
+      <stop offset="80%" stop-color="#E6B800"/>
+      <stop offset="100%" stop-color="#CC9900"/>
+    </radialGradient>
+    
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8BC34A"/>
+      <stop offset="50%" stop-color="#689F38"/>
+      <stop offset="100%" stop-color="#495E57"/>
+    </linearGradient>
+    
+    <!-- Background circle gradient -->
+    <radialGradient id="bgGradient" cx="0.5" cy="0.5">
+      <stop offset="0%" stop-color="#495E57" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#495E57" stop-opacity="0.15"/>
+    </radialGradient>
+    
+    <!-- Text glow effect -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="35" cy="40" r="32" fill="url(#bgGradient)"/>
+  
+  <!-- Lemon shadow -->
+  <ellipse cx="37" cy="43" rx="16" ry="24" fill="#000" opacity="0.12"/>
+  
+  <!-- Main lemon shape -->
+  <ellipse cx="35" cy="40" rx="16" ry="24" fill="url(#lemonGradient)" stroke="#D4AC0D" stroke-width="1"/>
+  
+  <!-- Lemon texture lines -->
+  <path d="M35 16 L35 64" stroke="#F9E79F" stroke-width="1.5" opacity="0.6"/>
+  <path d="M20 28 Q35 38 50 28" stroke="#F9E79F" stroke-width="1" opacity="0.5"/>
+  <path d="M20 40 Q35 50 50 40" stroke="#F9E79F" stroke-width="1" opacity="0.5"/>
+  <path d="M20 52 Q35 42 50 52" stroke="#F9E79F" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Primary highlight -->
+  <ellipse cx="28" cy="30" rx="5" ry="10" fill="#FFFF99" opacity="0.8"/>
+  <!-- Secondary highlight -->
+  <ellipse cx="26" cy="26" rx="2.5" ry="5" fill="#FFFFFF" opacity="0.9"/>
+  <!-- Small shine -->
+  <circle cx="25" cy="24" r="1.5" fill="#FFFFFF"/>
+  
+  <!-- Enhanced leaf design -->
+  <path d="M35 16 Q28 8 18 10 Q25 6 35 8 Q45 6 52 10 Q42 8 35 16" 
+        fill="url(#leafGradient)" stroke="#558B2F" stroke-width="0.8"/>
+  
+  <!-- Leaf veins -->
+  <path d="M35 16 Q30 12 25 10" stroke="#689F38" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M35 16 Q40 12 45 10" stroke="#689F38" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M35 16 Q33 13 30 11" stroke="#7CB342" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M35 16 Q37 13 40 11" stroke="#7CB342" stroke-width="0.8" stroke-linecap="round"/>
+  
+  <!-- Modern text with better spacing -->
+  <g>
+    <!-- "LITTLE" text with subtle glow -->
+    <text x="78" y="32" font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="20" font-weight="800" fill="white" 
+          letter-spacing="2px" filter="url(#textGlow)">
+      LITTLE
+    </text>
+    
+    <!-- "LEMON" text with subtle glow -->
+    <text x="78" y="56" font-family="'Segoe UI', Arial, sans-serif" 
+          font-size="20" font-weight="800" fill="white" 
+          letter-spacing="2px" filter="url(#textGlow)">
+      LEMON
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="185" cy="18" r="2.5" fill="#F4CE14" opacity="0.7"/>
+  <circle cx="190" cy="24" r="1.8" fill="#F4CE14" opacity="0.5"/>
+  <circle cx="180" cy="28" r="1.2" fill="#F4CE14" opacity="0.4"/>
+  
+  <!-- Elegant underline -->
+  <path d="M78 62 Q115 60 152 62" stroke="#F4CE14" stroke-width="2.5" 
+        stroke-linecap="round" opacity="0.8"/>
+</svg>
