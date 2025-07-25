@@ -1,7 +1,8 @@
 import {
     FaHome,
     FaDoorClosed,
-    FaFileInvoice
+    FaFileInvoice,
+    FaComments
 } from 'react-icons/fa';
 
 export const routes = [
@@ -19,5 +20,10 @@ export const routes = [
       title: 'Menu',
       href: '#menu',
       Icon: FaFileInvoice,
+    },
+    {
+      title: 'Testimonials',
+      href: '#testimonials',
+      Icon: FaComments,
     }
   ];
